@@ -1,9 +1,22 @@
 import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import Home from "./pages/home/Home";
+import Create from "./pages/create/Create";
+import Recipe from "./pages/recipe/Recipe";
+import Search from "./pages/search/Search";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/create" element={<Create />} />
+          <Route path="/recipes/:id" element={<Recipe />} />
+          <Route path="/search" element={<Search />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
