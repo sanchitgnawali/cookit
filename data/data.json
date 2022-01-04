@@ -48,6 +48,18 @@
       ],
       "cookingTime": "30 minutes",
       "id": "ZsMDwXu"
+    },
+    {
+      "title": "Soup",
+      "method": "boil some water and add all the ingredients. leave it to cook for a while and then simmer it for 20 minutes",
+      "ingredients": [
+        "something",
+        "anything",
+        "cook",
+        "milk"
+      ],
+      "cookingTime": "25 minutes",
+      "id": "KozDseW"
     }
   ]
 }
