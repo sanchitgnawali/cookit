@@ -9,11 +9,7 @@ export default function Navbar() {
   const { color, changeColor } = useTheme();
 
   return (
-    <div
-      onClick={() => changeColor("red")}
-      className="navbar"
-      style={{ background: color }}
-    >
+    <div className="navbar" style={{ background: color }}>
       <nav>
         <Link to="/" className="brand">
           <h1>Cookit PRO</h1>
