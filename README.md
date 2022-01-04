@@ -1,8 +1,31 @@
-# Getting Started with Create React App
+# Cookit Pro
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created using reactjs and json-server
 
-## Available Scripts
+# Running the application
+
+To run the application json-server is required. Install json server using the following command:
+
+``` npm install -g json-server```
+
+After installing the json-server run the json server, navigate to the root folder of the project and run the following command:
+
+```
+npx json-server ./data/data.json --watch
+```
+
+Yay! the json-server is up and running on port 3000. Now let's install the npm packages and start the application. Run the following scripts on the root folder of the project
+
+```
+npm install
+npm start
+```
+
+Since port 3000 is already in use by json-server, react will prompt if we want to use a different port number. Click yes and the application should run on port 3001.
+
+<hr/>
+
+## Other Available Scripts
 
 In the project directory, you can run:
 
