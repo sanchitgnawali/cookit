@@ -1,6 +1,6 @@
 import { useSearchParams } from "react-router-dom";
 import { useFetch } from "./../../hooks/useFetch";
-
+import RecipeList from "../../components/RecipeList";
 import "./Search.css";
 
 export default function Search() {
@@ -15,6 +15,10 @@ export default function Search() {
   return (
     <div>
       <h2 className="page-title">Recipes including {query}</h2>
+
+      {error && <p className="error">{error}</p>}
+      {isPending && <p className="loading">Loading Search Results</p>}
+      {data && <RecipeList recipes={data} />}
     </div>
   );
 }
