@@ -1,10 +1,15 @@
 import { Link } from "react-router-dom";
-import "./Navbar.css";
 import Searchbar from "./Searchbar";
+import { useTheme } from "./../hooks/useTheme";
+
+//styles
+import "./Navbar.css";
 
 export default function Navbar() {
+  const { color } = useTheme();
+
   return (
-    <div className="navbar">
+    <div className="navbar" style={{ background: color }}>
       <nav>
         <Link to="/" className="brand">
           <h1>Cookit PRO</h1>
